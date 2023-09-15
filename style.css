@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yatra One', cursive;
+    color: #C2DEDC;
+    opacity: 1;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background: #000;
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+.cursor{
+    position: fixed;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 100;
+    mix-blend-mode: difference;
+    pointer-events: none;
+}
+.section{
+    overflow: hidden;
+}
+nav{
+    padding: 2.5vw 5vw;
+}
+nav h2{
+    font-size: 17px;
+    font-weight: 500;
+    width: fit-content;
+    padding: 0.3vw 0.7vw;
+    cursor: pointer;
+}
+.section-1{
+    height: 73vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_one_inner{
+    height: 80%;
+    width: 90%;
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+}
+.section_one_inner::before{
+    content: '';
+    height: 0%;
+    width: 1.5vw;
+    background-color: #088395;
+    position: absolute;
+    right: 0;
+    border-radius: 10px;
+    z-index: 1;
+}
+.section_one_inner h1{
+    font-size: 8vw;
+    font-weight: 400;
+    white-space: nowrap;
+    line-height: 1;
+    text-shadow: 2px 2px 3px #000;
+}
+
+.section-2{
+    display: flex;
+    margin-top: 3vw;
+    transform: rotate(-10deg);
+}
+.section-2 p i,
+.section-2 p span,
+.section-2 p{
+    color: #000;
+    font-size: 6vw;
+    white-space: nowrap;
+    line-height: 1;
+    background: #F1734C;
+    padding: 7px;
+    letter-spacing: 2px;
+}
+.section-2s{
+    display: flex;
+    margin-top: 3vw;
+    transform: rotate(10deg) translateX(-200%) ;
+}
+.section-2s p i,
+.section-2s p span,
+.section-2s p{
+    color: #000;
+    font-size: 6vw;
+    white-space: nowrap;
+    line-height: 1;
+    background: #F1734C;
+    padding: 7px;
+    letter-spacing: 2px;
+    border-top: 1px solid #000;
+}
+.section-2s p{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.imgs{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 10000;
+}
+.section-3{
+    margin-top: 14vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.section-3 h1{
+    font-weight: 400;
+    font-size: 12vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #97eefd;
+    text-align: center;
+
+}
+.section-3 .under{
+    background-color: #088395;
+    height: 7px;
+    width: 0%;
+    border-radius: 4px;
+
+}
+.section-3 img{
+    position: absolute;
+    height: 600px;
+    filter: brightness(120%);
+}
+
